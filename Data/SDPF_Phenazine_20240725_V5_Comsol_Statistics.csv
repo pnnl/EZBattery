@@ -1,0 +1,2 @@
+Cycle,Time_charge_s,Time_discharge_s,CE,Charge_cut_off_accuracy_V,Discharge_cut_off_accuracy_V,Charge_iter_step,Discharge_iter_step,Cycle_start_time_s,Charge_end_time_s,Charge_end_time_s,Rest_end_time_s,Rest_end_time_s,Discharge_end_time_s,Charge_energy_Wh,Discharge_energy_Wh,EE
+1.0,1801.5,1460.625,0.8107826810990841,0.0001990929185139434,3.313032501338353e-05,1.0,3.0,0.0,1801.5,1801.5,1861.5,1861.5,3322.125,36.25310825509282,15.027634974337268,0.4145199045719395
