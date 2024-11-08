@@ -44,7 +44,7 @@ year = {2024}
 }
 
 ## Developers
-Yunxiang Chen, Jie Bao, Peiyuan Gao, Yucheng Fu, Zhijie Xu, Chao Zeng, Soowhan Kim, Litao Yan, Wei Wang, Qixuan Jiang*, Alvin Liu*, Tiffany Louie*, Grace Yuan*  
+Yunxiang Chen, Jie Bao, Peiyuan Gao, Yucheng Fu, Alasdair Crawford, Zhijie Xu, Chao Zeng, Soowhan Kim, Litao Yan, Wei Wang, Qixuan Jiang*, Alvin Liu*, Tiffany Louie*, Grace Yuan*  
 Pacific Northwest National Laboratory, Richland, WA, USA  
  \* : Intern students
 
