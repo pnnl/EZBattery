@@ -30,6 +30,8 @@ All the codes for the models are in folder EZBattery. Five Jupyter Notebooks are
 * Demo_Calibration_Organic.ipynb : simulate organic elelctrolyte redox flow battery.
 * Demo_Zn_system.ipynb : simulate Zn/I hybrid redox flow battery, and up-scale from cell to long duration energy storage system.
 * Demo_Calibration_RedoxTargeting.ipynb : simulate redox targeting flow battery.
+* Demo_large_Vanadium_system_lab_to_system.ipynb : An example for upscaling a lab-scale cell to a 50-cell stack vanadium redox flow battery operating 15 years
+
 
 The users can follow the descrption in each Jupyter Notebook to run the model step by step.
 
