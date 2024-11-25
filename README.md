@@ -24,7 +24,7 @@ The following libraries are needed.
 Using different version of numpy and scipy as listed above may cause slightly different simualtion results.  
 
 ## Run the code
-All the codes for the models are in folder EZBattery. Five Jupyter Notebooks are provided to demonstrate how to used the code. All the necessary data for the demos are in folder Data.
+All the codes for the models are in folder EZBattery. Six Jupyter Notebooks are provided to demonstrate how to used the code. All the necessary data for the demos are in folder Data.
 * Demo_Cell_Usage.ipynb : a demo to show the minimum requirement to run the model, with all vanadium flow battery as an example.
 * Demo_Calibration_Vanadium.ipynb : simulate all vanadium redox flow battery.
 * Demo_Calibration_Organic.ipynb : simulate organic elelctrolyte redox flow battery.
