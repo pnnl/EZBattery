@@ -39,7 +39,7 @@ The users can follow the descrption in each Jupyter Notebook to run the model st
 address = {Richland, WA, USA},
 author = {Chen, Yunxiang and Bao, Jie and Gao, Peiyuan and Fu, Yucheng and Zeng, Chao and Xu, Zhijie and Kim, Soowhan and Yan, Litao and Wang, Wei and Jiang, Qixuan and Liu, Alvin and Louie, Tiffany and Yuan, Grace},
 title = {{EZBattery: an easy-to-use flow battery simulation software}},
-url = {https://github.com/pnnl/EZBattery},
+url = {https://github.com/pnnl/EZBattery },
 year = {2024}
 }
 
