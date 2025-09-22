@@ -5,7 +5,7 @@ EZBattery is an easy-to-use flow battery simulation software for predicting the 
 
 The details about the models are available in the journal articles: 
 
-Jie Bao, Amanda Howard, Ayoub El Bendali, Yunxiang Chen, Yucheng Fu, Peiyuan Gao, Soowhan Kim, Tiffany Louie, Grace Yuan, Alvin Liu, Qixuan Jiang, Chao Zeng, Zhijie Xu, Panos Stinis, Wei Wang, Vincent Sprenkle, (2025), Computationally efficient models for aqueous organic redox flow batteries, 134, Part A, 118134, Journal of Energy Storage, (DOI https://doi.org/10.1016/j.est.2025.118134)
+Jie Bao, Amanda Howard, Ayoub El Bendali, Yunxiang Chen, Yucheng Fu, Peiyuan Gao, Soowhan Kim, Tiffany Louie, Grace Yuan, Alvin Liu, Qixuan Jiang, Chao Zeng, Zhijie Xu, Panos Stinis, Wei Wang, Vincent Sprenkle, (2025), Computationally efficient models for aqueous organic redox flow batteries, Journal of Energy Storage, 134, Part A, 118134, (DOI https://doi.org/10.1016/j.est.2025.118134)
 
 Yunxiang Chen, Zhijie Xu, Chao Wang, Jie Bao, Brian Koeppel, Litao Yan, Peiyuan Gao, Wei Wang, (2021), Analytical modeling for redox flow battery design, Journal of Power Sources, 482 (15) 228817 (DOI https://doi.org/10.1016/j.jpowsour.2020.228817)      
 
