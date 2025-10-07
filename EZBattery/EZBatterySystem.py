@@ -40,7 +40,7 @@ def shuntPowerLoss(PP0,try_v,I,Rce):
     manifoldRadius = PP.ManifoldRadius
     manifoldLength = PP.ManifoldLength
     flowChannelThickness = PP.FlowChannelThickness
-    flowChannelWidth = PP.FlowChannelLength
+    flowChannelWidth = PP.FlowChannelWidth
     flowChannelLength = PP.FlowChannelLength
     n = PP.CellNumber
     
