@@ -40,7 +40,7 @@ def shuntPowerLoss(PP0,try_v,I,Rce):
     manifoldRadius = PP.ManifoldRadius
     manifoldLength = PP.ManifoldLength
     flowChannelThickness = PP.FlowChannelThickness
-    flowChannelWidth = PP.FlowChannelLength
+    flowChannelWidth = PP.FlowChannelWidth
     flowChannelLength = PP.FlowChannelLength
     n = PP.CellNumber
     
@@ -77,7 +77,7 @@ def pumpPowerLoss(PP0):
     channelDepth = PP.ChannelDepth
     channelWidth = PP.ChannelWidth
     nChannel = PP.ChannelNumber
-    K = PP.Calculated['ElectrodePermeability'][1]                              # Using Cozney-Karman equation.
+    K = PP.Calculated['ElectrodePermeability'][1]*PP.SystemEletrodePermeabilityAdjust                              # Using Cozney-Karman equation.
     visc = PP.CathodeElectrolyteViscosity
     interdigitationWidth = PP.InterdigitationWidth
     Q = PP.CathodePumpRate
@@ -116,15 +116,19 @@ def systemPower(PP0):
     Re = RFB(PP)
 
     # Calculating cell resistance.
-    PP1 = copy.deepcopy(PP)
-    PP1.Current = try_current - d_current
-    Re1 = RFB(PP1)
-    PP2 = copy.deepcopy(PP)
-    PP2.Current = try_current + d_current
-    Re2 = RFB(PP2)
+    #PP1 = copy.deepcopy(PP)
+    #PP1.Current = try_current - d_current
+    PP.Current = try_current - d_current
+    Re1 = RFB(PP)
+    #PP2 = copy.deepcopy(PP)
+    #PP2.Current = try_current + d_current
+    PP.Current = try_current + d_current
+    Re2 = RFB(PP)
+    PP.Current = try_current
 
     # Calculating system power if Re is not empty.
     tt_p,try_v,shunt_powerloss,pump_powerloss = (-1e7,-9999,-9999,-9999)
+    #print('len()',len(Re['Potentials']['Ec_V']),len(Re1['Potentials']['Ec_V']),len(Re2['Potentials']['Ec_V']))
     if len(Re)>0 and len(Re1)>0 and len(Re2)>0:
         try_v= Re['Potentials']['Ec_V'].iloc[-1]
         Rce = abs((Re2['Potentials']['Ec_V'].iloc[-1] - \
@@ -134,8 +138,8 @@ def systemPower(PP0):
         shunt_powerloss,_ = shuntPowerLoss(PP,try_v,try_current,Rce)
         pump_powerloss,_ = pumpPowerLoss(PP)
     
-        if Status == -1: tt_p = try_v*try_current * n - shunt_powerloss-pump_powerloss
-        if Status == 1: tt_p = try_v*try_current *n + shunt_powerloss+pump_powerloss 
+        if Status == -1: tt_p = try_v*try_current * n - shunt_powerloss-pump_powerloss -PP.SystemAuxPower # approximated extra auxiliary power
+        if Status == 1: tt_p = try_v*try_current *n + shunt_powerloss+pump_powerloss   +PP.SystemAuxPower # approximated extra auxiliary power
         
     #timeend=time.time()
     #print("total computation time (s)", timeend-timestart)
